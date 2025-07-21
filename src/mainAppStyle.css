@@ -128,8 +128,9 @@ ul li{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 2vh;
     width: 50%;
-    height: 200%;
+    height: auto;
 }
 #rightSide h4{
     display: flex;
@@ -262,10 +263,19 @@ input:focus{
   background-color: white;
   max-width: 800px;
   margin: auto;
-  padding: 20px;
+  padding: 20pt;
   border-radius: 8px;
   max-height: 100%;
-  overflow-y: auto; /* Scroll inside popup if needed */
+  min-height: 842pt !important;
+  width: 595pt !important;
+  color: #000 !important;
+  overflow-y: auto;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.cv-popup * {
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  white-space: normal !important;
 }
 
 .close-btn {
@@ -297,6 +307,8 @@ input:focus{
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 .cv-popup p {
     line-height: 1.5;
@@ -421,7 +433,7 @@ textarea{
     width: 74.4vw;
 }
 }
-@media screen and (max-height:820px){
+/* @media screen and (max-height:820px){
   #rightSide{
     margin-top: 5vh;
   }
@@ -445,4 +457,4 @@ textarea{
   #rightSide{
     margin-top: 24vh;
   }
-}
+} */
