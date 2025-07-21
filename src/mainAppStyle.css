@@ -218,6 +218,11 @@ ul li{
 #addEduBtn, #addWorkBtn, #addProjectBtn{
   margin-right: 20px;
 }
+#actualContent .btnsCollection{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 p a:link, p a:visited{
     text-decoration: none;
 }

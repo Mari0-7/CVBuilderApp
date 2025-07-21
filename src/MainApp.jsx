@@ -328,9 +328,10 @@ function MainApp() {
                                 onChange={handleEducationChange}
                             />
                         ))}
-
+                        <div className="btnsCollection">
                         <button className="btns" id="addEduBtn" onClick={addEducation}>Add Education</button>
                         <button className="btns" onClick={removeEducation}>Remove Education</button>
+                        </div>
                         <h4>Work Experience</h4>
                         {workList.map((work, index) => (
                             <Work
@@ -340,9 +341,10 @@ function MainApp() {
                                 onChange={handleWorkChange}
                             />
                         ))}
-
+                        <div className="btnsCollection">
                         <button className="btns" id="addWorkBtn" onClick={addWork}>Add Work Experience</button>
                         <button className="btns" onClick={removeWork}>Remove Work Experience</button>
+                        </div>
                         <h4>Projects</h4>
                         {projectList.map((proj, index) => (
                             <Project
@@ -352,9 +354,10 @@ function MainApp() {
                                 onChange={handleProjectChange}
                             />
                         ))}
-
+                        <div className="btnsCollection">
                         <button className="btns" id="addProjectBtn" onClick={addProject}>Add project</button>
                         <button className="btns" onClick={removeProject}>Remove project</button>
+                        </div>
                     </div>
                     <div id="finishForm">
                         <button onClick={() => { togglePopup(); }}>Create CV</button>
