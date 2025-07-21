@@ -122,7 +122,7 @@ function MainApp() {
             format: 'a4'
         });
 
-        doc.setFont("helvetica");
+        doc.setFont("arial");
         doc.setTextColor(0, 0, 0);
 
         const margin = 40;
@@ -132,7 +132,7 @@ function MainApp() {
 
         const addText = (text, size = 12, isBold = false, x = margin) => {
             doc.setFontSize(size);
-            doc.setFont(isBold ? "helvetica" : "helvetica", isBold ? "bold" : "normal");
+            doc.setFont(isBold ? "arial" : "arial", isBold ? "bold" : "normal");
 
             const lines = doc.splitTextToSize(text, maxWidth - x + margin);
             lines.forEach(line => {
