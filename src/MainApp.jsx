@@ -11,7 +11,7 @@ const CVPopup = forwardRef(({ basic, educationList, workList, projectList, onClo
         <div className="cv-popup" ref={ref} style={{
             color: '#000000 !important',
             backgroundColor: '#ffffff !important',
-            fontFamily: 'Helvetica, Arial, sans-serif !important'
+            fontFamily: 'Arial, sans-serif !important'
         }}>
             <button className="close-btn noPrint" onClick={onClose}>X</button>
 
@@ -353,8 +353,8 @@ function MainApp() {
                             />
                         ))}
 
-                        <button className="btns" id="addWorkBtn" onClick={addWork}>Add project</button>
-                        <button className="btns" onClick={removeWork}>Remove project</button>
+                        <button className="btns" id="addProjectBtn" onClick={addProject}>Add project</button>
+                        <button className="btns" onClick={removeProject}>Remove project</button>
                     </div>
                     <div id="finishForm">
                         <button onClick={() => { togglePopup(); }}>Create CV</button>

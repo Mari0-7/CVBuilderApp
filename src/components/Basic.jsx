@@ -15,11 +15,11 @@ function Basic({ basic, setBasic }) {
         <>
             <div>
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." value={basic.name} onChange={handleChange} />
+                <input type="text" id="name" name="name" placeholder="Enter your name" value={basic.name} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="jobTitle">Title</label>
-                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your name..." value={basic.jobTitle} onChange={handleChange} />
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Your job title" value={basic.jobTitle} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="email">Email address</label>

@@ -9,20 +9,20 @@ function Education({ index, data, onChange }) {
     return (
         <>
             <div>
-                <label htmlFor="name">School name</label>
-                <input type="text" id="schoolName" name="schoolName" placeholder="Enter your name..." value={data.schoolName} onChange={handleChange} />
+                <label htmlFor="name">University name</label>
+                <input type="text" id="schoolName" name="schoolName" placeholder="Enter your university's name" value={data.schoolName} onChange={handleChange} />
             </div>
             <div>
-                <label htmlFor="titleStudy">Title of Study</label>
-                <input type="text" id="titleStudy" name="titleStudy" placeholder="Enter your name..." value={data.title} onChange={handleChange} />
+                <label htmlFor="titleStudy">Field of Study</label>
+                <input type="text" id="titleStudy" name="titleStudy" placeholder="Field of study" value={data.title} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="startDateStudy">Start Date</label>
-                <input type="date" id="startDateStudy" name="startDateStudy" placeholder="Enter your name..." value={data.startDateStudy} onChange={handleChange} />
+                <input type="date" id="startDateStudy" name="startDateStudy" value={data.startDateStudy} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="endDateStudy">End Date</label>
-                <input type="date" id="endDateStudy" name="endDateStudy" placeholder="Enter your name..." value={data.endDateStudy} onChange={handleChange} />
+                <input type="date" id="endDateStudy" name="endDateStudy"  value={data.endDateStudy} onChange={handleChange} />
             </div>
         </>
     );

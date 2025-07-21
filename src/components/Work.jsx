@@ -19,11 +19,11 @@ function Work({ index, data, onChange }) {
         <>
             <div>
                 <label htmlFor="companyName">Company name</label>
-                <input type="text" id="companyName" name="companyName" placeholder="Enter your name..." value={data.companyName} onChange={handleChange} />
+                <input type="text" id="companyName" name="companyName" placeholder="Enter your Company's name" value={data.companyName} onChange={handleChange} />
             </div>
             <div>
-                <label htmlFor="workTitle">Work title</label>
-                <input type="text" id="workTitle" name="workTitle" placeholder="Enter your name..." value={data.workTitle} onChange={handleChange} />
+                <label htmlFor="workTitle">Job title</label>
+                <input type="text" id="workTitle" name="workTitle" placeholder="Enter your role" value={data.workTitle} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="responsibilities">Responsiblities</label>
@@ -31,9 +31,9 @@ function Work({ index, data, onChange }) {
             </div>
             <div>
                 <label htmlFor="dateStart">Start date</label>
-                <input type="date" id="dateStart" name="dateStart" placeholder="Enter your name..." value={data.dateStart} onChange={handleChange} />
+                <input type="date" id="dateStart" name="dateStart"  value={data.dateStart} onChange={handleChange} />
                 <label htmlFor="dateEnd">End date</label>
-                <input type="date" id="dateEnd" name="dateEnd" placeholder="Enter your name..." value={data.dateEnd} onChange={handleChange} disabled={data.currentlyEmployed} />
+                <input type="date" id="dateEnd" name="dateEnd" value={data.dateEnd} onChange={handleChange} disabled={data.currentlyEmployed} />
                 <div id="currentlyWork">
                     <input type="checkbox" id="currentlyEmployed" name="currentlyEmployed" checked={data.currentlyEmployed} onChange={handleCheckBox} />
                     <label htmlFor="currentlyEmployed">I currently work there</label>

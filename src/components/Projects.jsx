@@ -10,7 +10,7 @@ function Project({ index, data, onChange }) {
         <>
             <div>
                 <label htmlFor="projectName">Project Name</label>
-                <input type="text" id="projectName" name="projectName" placeholder="Enter your name..." value={data.projectName} onChange={handleChange} />
+                <input type="text" id="projectName" name="projectName" placeholder="Enter the project's name" value={data.projectName} onChange={handleChange} />
             </div>
             <div>
                 <label htmlFor="features">Features</label>
