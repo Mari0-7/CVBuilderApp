@@ -1,3 +1,5 @@
+# An ATS friendly CV builder application, just input the required info, download as a pdf, et voila!
+____________________________________________________________________________________________________________
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
