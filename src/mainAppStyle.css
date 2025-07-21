@@ -1,0 +1,448 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  /* 11. Set a default font size */
+  font-size: 16px;
+  /* 12. Set a default font family */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --bgColor: rgb(228, 228, 228);
+  --primaryColor: rgb(189, 11, 189);
+}
+body{
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heroSignup{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 15px;
+}
+nav{
+    height: 20vh  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(0, 153, 255), rgb(212, 0, 255));
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+#topPart{
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+}
+
+#bottomPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#topPart p{
+    color: rgba(255, 255, 255, .7);
+}
+#bottomPart p{
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.5rem;
+}
+#leftSide ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    padding: 1rem;
+    color: white;
+}
+#rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 200%;
+}
+#rightSide h4{
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.4);
+    width: 34.4vw;
+}
+#rightSide h4::after,#rightSide h4::before{
+    content: "";
+    flex: 1 1;
+    border: 0.1px solid rgba(0, 0, 0, 0.4);
+    border-left: 8.3vw solid rgba(0, 0, 0, 0.4);
+    margin: auto 5px;
+}
+#rightText{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+}
+#rightText h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#rightText p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+#actualContent #termsAndConditions{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+#actualContent #termsAndConditions input{
+    width: 1vw;
+    padding: 0;
+}
+#actualContent div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+} 
+#actualContent input, textarea{
+  border: 1.8px solid rgb(185, 185, 187);
+  padding: 5px 10px;
+  width: 34vw;
+  border-radius: 6px;
+}
+#actualContent p{
+    text-align: right;
+    margin-bottom: 10px;
+}
+#finishForm button{
+    margin-top: 20px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+    border: 1px solid gray;
+    width: 34vw;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 8px 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+#finishForm p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0  ;
+}
+#actualContent #currentlyWork{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#currentlyWork input{
+    width: 1vw;
+    border-radius: 6px;
+}
+#currentlyWork label{
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+}
+#addEduBtn, #addWorkBtn{
+  margin-right: 20px;
+}
+p a:link, p a:visited{
+    text-decoration: none;
+}
+#socialMedia button{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 6px 48px;
+    border-radius: 10px;
+}
+
+input:invalid{
+    border: 1.8px solid rgb(228, 75, 75);
+}
+input:focus{
+    outline: 1.8px solid blue;
+}
+.cv-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; /* Allow scrolling */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  padding: 20px; /* optional: for breathing space around popup */
+}
+.cv-popup-close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+
+.cv-popup {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 100%;
+  overflow-y: auto; /* Scroll inside popup if needed */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgb(211, 2, 2);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.close-btn:hover{
+  filter: drop-shadow(0px 0px 8px rgb(211, 2, 2));
+}
+
+@media print {
+  .noPrint {
+    display: none !important;
+  }
+}
+.cv-section {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.cv-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.cv-popup p {
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.btns{
+  width: 16.5vw;
+  border: 1.5px solid black;
+  transition: all 0.3s ease-in-out;
+}
+.btns:hover{
+  background-color: plum;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+textarea{
+  height: 20vh;
+}
+@media screen and (max-width:1024px){
+  #rightSide{
+    width: 100%;
+  }
+  #rightText{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+  #actualContent input, textarea{
+  border: 1.8px solid rgb(185, 185, 187);
+  padding: 5px 10px;
+  width: 64vw;
+  border-radius: 6px;
+}
+#actualContent #currentlyWork{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#currentlyWork input{
+    width: 2vw;
+    border-radius: 6px;
+}
+#currentlyWork label{
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+}
+.btns{
+  width: 30.8vw;
+  border: 1.5px solid black;
+  transition: all 0.3s ease-in-out;
+}
+#finishForm button{
+    margin-top: 20px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+    border: 1px solid gray;
+    width: 64vw;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 8px 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+#rightSide h4{
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.4);
+    width: 44.4vw;
+}
+}
+@media screen and (max-width:650px){
+#currentlyWork input{
+    width: 3vw;
+    border-radius: 6px;
+}
+}
+@media screen and (max-width:425px){
+  #actualContent input, textarea{
+  border: 1.8px solid rgb(185, 185, 187);
+  padding: 5px 10px;
+  width: 74vw;
+  border-radius: 6px;
+}
+#actualContent #currentlyWork{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#currentlyWork input{
+    width: 4vw;
+    border-radius: 6px;
+}
+#currentlyWork label{
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+}
+.btns{
+  width: 35vw;
+  height: 10vh;
+  border: 1.5px solid black;
+  transition: all 0.3s ease-in-out;
+}
+#finishForm button{
+    margin-top: 20px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+    border: 1px solid gray;
+    width: 74vw;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 8px 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+#rightSide h4{
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.4);
+    width: 74.4vw;
+}
+}
+@media screen and (max-height:820px){
+  #rightSide{
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-height:775px){
+  #rightSide{
+    margin-top: 8vh;
+  }
+}
+@media screen and (max-height:740px){
+  #rightSide{
+    margin-top: 12vh;
+  }
+}
+@media screen and (max-height:700px){
+  #rightSide{
+    margin-top: 18vh;
+  }
+}
+@media screen and (max-height:660px){
+  #rightSide{
+    margin-top: 24vh;
+  }
+}
